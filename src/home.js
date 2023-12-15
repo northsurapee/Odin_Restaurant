@@ -1,3 +1,8 @@
+/* 
+'home.js' contain loadHome() that load home page, then export to 'index.js'
+*/
+
+
 function createParagraph(text) {
     const paragraph = document.createElement("p");
     paragraph.textContent = text;
@@ -21,7 +26,7 @@ function createHome() {
     return home
 }
 
-// Append Home in main section of the page
+/* Exported function: Append home page in main div */
 function loadHome() {
     const main = document.getElementById("main");
     main.textContent = ""; // clear previous content

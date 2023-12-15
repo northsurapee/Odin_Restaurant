@@ -1,3 +1,8 @@
+/* 
+'menu.js' contain loadMenu() that load menu page, then export to 'index.js'
+*/
+
+// Create menu div and append all menuItem card in it
 function createMenu() {
     const menu = document.createElement("div");
     menu.classList.add("menu");
@@ -54,7 +59,7 @@ function createMenu() {
     return menu;
 }
 
-// Create menu card
+// Create menuItem card that contain in menu div
 function createMenuItem(name, description) {
     const menuItem = document.createElement("div");
     menuItem.classList.add("menu-item");
@@ -76,6 +81,7 @@ function createMenuItem(name, description) {
     return menuItem;
 }
 
+// Exported function: Append menu page in main div 
 function loadMenu() {
     const main = document.getElementById("main");
     main.textContent = ""; // clear previous content

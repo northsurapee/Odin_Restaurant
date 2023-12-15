@@ -1,3 +1,7 @@
+/* 
+'contact.js' contain loadContact() that load contact page, then export to 'index.js'
+*/
+
 function createContact() {
     const contact = document.createElement("div");
     contact.classList.add("contact");
@@ -19,6 +23,7 @@ function createContact() {
     return contact;
 }
 
+// Exported function: Append contact page in main div 
 function loadContact() {
     const main = document.getElementById('main')
     main.textContent = ''

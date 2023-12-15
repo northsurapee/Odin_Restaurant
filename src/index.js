@@ -1,3 +1,8 @@
+/* 
+'index.js' initialize website by import and calling DOM manipulation function (JS function with DOM API (JS command to manipulate HTML element))
+           including "loadHome", "loadMenu" and "loadContact" from other module and create Header (common of all pages) to navigate between page.
+*/
+
 import loadHome from "./home";
 import loadMenu from "./menu";
 import loadContact from "./contact";
