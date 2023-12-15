@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "push": "git subtree push --prefix dist origin gh-pages"
+    "push": "git subtree push --prefix dist origin gh-pages" 
   },
   "author": "",
   "license": "ISC",
