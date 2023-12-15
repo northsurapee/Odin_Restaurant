@@ -1,0 +1,167 @@
+/* Background */
+body::after {
+    content: ""; /* Create an empty pseudo-element */
+    background: url('images/background.jpeg') no-repeat center center fixed; /* Set background properties */
+    background-size: cover; /* Ensure the image covers the entire pseudo-element */
+    opacity: 0.7; /* Set the opacity of the background image only */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place the pseudo-element behind the actual content */
+}
+
+body {
+    margin: 0px; 
+    font-family: 'Montserrat';
+}
+
+/* Custom variable */
+:root {
+    --light-background: rgba(256, 256, 256, 0.9);
+    --lighter-background: rgba(256, 256, 256, 0.6);
+    --lightest-background: rgba(256, 256, 256, 0.4);
+}
+
+/* All father container */
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Header section */
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    margin-top: 0px;
+    padding: 30px;
+    padding-bottom: 25px;
+    background-color: var(--light-background);
+}
+
+h1 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+button {
+    padding: 5px;
+    border: none;
+    background: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    font-weight: 600;
+    transform: scale(1.1);
+}
+
+.active {
+    border-bottom: 2px solid black;
+}
+
+/* Main */
+.main {
+    width: 600px;
+    padding: 40px;
+    margin-bottom: 40px;
+    background-color: var(--lighter-background);
+    border-radius: 20px;
+}
+
+/* Home */
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home p {
+    font-size: 1.3em;
+    margin: 0.4em;
+}
+
+.home img {
+    margin: 20px;
+    width: 400px;
+    height: 400px;
+    border: 5px solid white;
+    border-radius: 50%; 
+    overflow: hidden; /* Hide the parts of the image outside the circle */
+    position: relative;
+  }
+
+/* Menu */
+.menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 1fr 1fr */
+    gap: 20px;
+}
+
+.menu-item {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--lightest-background);
+    border: 3px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.menu-item p {
+    text-align: center;
+}
+
+.menu-item:hover {
+    background-color: var(--light-background);
+}
+
+h2 {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.menu img {
+    max-width: 200px;
+}
+
+/* Contact */
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact img {
+    margin-top: 20px;
+    align-self: center;
+    max-width: 550px;
+
+    border: 3px solid white;
+    border-radius: 10px;
+}
+
+.contact p {
+    font-size: 1.1em;
+    margin: 8px;
+}
+
